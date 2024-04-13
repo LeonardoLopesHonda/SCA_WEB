@@ -37,4 +37,4 @@ On a new terminal run:
 php artisan migrate:refresh --seed
 ```
 
-This will run the factories wich will provide some fake data to test the basic funcionalities.
+This will run the factories wich will provide some fake data to test the basic functionalities.
