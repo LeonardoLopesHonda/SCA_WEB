@@ -1,6 +1,6 @@
 <x-layout>
     <div class="container">
-        <a href="#" class="btn btn-primary my-4"> new DA</a>
+        <a href="{{ route('decisionArea.create') }}" class="btn btn-primary my-4"> new DA</a>
         <div class="container-fluid">
             @foreach ($decisionArea as $da)
                 <div> <!-- Decision Area -->
