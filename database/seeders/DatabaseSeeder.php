@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\DecisionArea;
 use App\Models\Note;
+use App\Models\Project;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -24,7 +25,8 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('pass123')
         ]);
 
-        Note::factory(10)->create();
-        DecisionArea::factory(5)->create();
+        // Note::factory(10)->create();
+        DecisionArea::factory(2)->create();
+        Project::factory(2)->create();
     }
 }

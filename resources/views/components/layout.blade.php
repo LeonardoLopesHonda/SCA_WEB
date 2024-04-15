@@ -16,7 +16,7 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link rel="stylesheet" href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap">
     </head>
-    <body class="antialiased container">
+    <body>
         {{ $slot }}
     </body>
 </html>

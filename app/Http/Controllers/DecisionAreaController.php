@@ -13,7 +13,7 @@ class DecisionAreaController extends Controller
      */
     public function index()
     {
-        $decisionAreas = DecisionArea::query()->orderBy('id')->paginate(5);
+        $decisionAreas = DecisionArea::query()->orderBy('id')->paginate(10);
         // dd($decisionAreas);
         return view('decisionArea.index', ['decisionArea' => $decisionAreas]);
     }
@@ -23,7 +23,8 @@ class DecisionAreaController extends Controller
      */
     public function create()
     {
-        return view('decisionArea.create');
+        $decisionAreas = DecisionArea::query()->orderBy('id');
+        return view('decisionArea.create', ['decisionArea' => $decisionAreas]);
     }
 
     /**

@@ -14,8 +14,7 @@ class DecisionAreaFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition(): array
-    {   
+    public function definition(): array {
         static $num = 1;
         return [
             'label' => "DA ".str($num++)->trim()->toString(),
